@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+//The following example demonstrates how to get content with the jQuery text() and html() methods:
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        alert("Text: " + $(".test").text());
+    });
+    $(".btn2").click(function(){
+        alert("HTML: " + $(".test").html());
+    });
+});
+
+//The following example demonstrates how to get the value of an input field with the jQuery val() method:
+$(document).ready(function() {
+	$(".btn3").click(function() {
+		alert("Value" + $(".test").).
+	});
+});
+</script>
+</head>
+
+<p class="test">This is some <b>bold</b> text in a paragraph.</p>
+
+<button class="btn1">Show Text</button>
+<button class="btn2">Show HTML</button>
+
+<p>Name: <input type="text" name="name" value="Kushlani Aluthge"></p>
+
+<button class="btn3">Show Value</button>
+</head>
+<body>
+
+</body>
+</html>

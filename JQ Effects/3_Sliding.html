@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+    //With jQuery you can create a sliding effect on elements.
+    //jQuery has the following slide methods:
+        //slideDown()
+        //slideUp()
+        //slideToggle()
+    $(document).ready(function() {
+    	$(".one").click(function() {
+    		$(".two").slideDown(2000);
+    	});
+    });
+
+    $(document).ready(function() {
+        $(".three").click(function() {
+            $(".four").slideUp(2000);
+        });
+    });
+
+    $(document).ready(function() {
+        $(".five").click(function() {
+            $(".six").slideToggle(2000);
+        });
+    });
+
+   </script>
+
+   <style>
+       .one,.two,.three,.four,.five,.six {
+        padding: 6px;
+        border: 1px solid black;
+        background-color: skyblue;
+        font-size: 20px;
+        text-align: center;
+       }
+        
+       .two,.six {
+        padding: 80px;
+        display: none;
+       }
+
+        .four {
+        padding: 80px;
+       }
+   </style>
+</head>
+
+<body>
+    <div class="one">Click Me</div>
+    <div class="two">Here We Go!!!</div>
+    <br>
+    <br>
+    <div class="three">Click Me</div>
+    <div class="four">Here We Go!!!</div>
+    <br>
+    <br>
+    <div class="five">Click Me</div>
+    <div class="six">Here We Go!!!</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".btnOne").click(function() {
+            $(".one").fadeIn("fast");    
+            $(".two").fadeIn("slow");    
+            $(".three").fadeIn(1500);
+        });
+    });
+
+    $(document).ready(function() {
+        $(".btnTwo").click(function() {
+            $(".four").fadeOut("fast");    
+            $(".five").fadeOut("slow");    
+            $(".six").fadeOut(1500);
+        });
+    });
+
+    $(document).ready(function() {
+        $(".btnThree").click(function() {
+            $(".seven").fadeToggle("fast");    
+            $(".eight").fadeToggle("slow");    
+            $(".nine").fadeToggle(1500);
+        });
+    });
+
+    $(document).ready(function() {
+        $(".btnFour").click(function() {
+            $(".ten").fadeTo("fast", 0.7);    
+            $(".eleven").fadeTo("slow",0.5);    
+            $(".twelve").fadeTo(1500, 0.3);
+        });
+    });
+    </script>
+
+    <style>
+       .one,.two,.three,.ten, .eleven, .twelve {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--With jQuery you can fade an element in and out of visibility.
+    
+    jQuery has the following fade methods:
+        
+        fadeIn()
+        fadeOut()
+        fadeToggle()
+        fadeTo() -->
+    <button class="btnOne">FadeIn</button>
+    <br>
+    <br>
+    <h1 class="one">Im gonna fade In slow...</h1>
+    <h1 class="two">Im gonna fade In fast...</h1>
+    <h1 class="three">Im gonna fade In 1500...</h1>
+    <br>
+    <br>
+    <br>
+
+    <button class="btnTwo">FadeOut</button>
+    <br>
+    <br>
+    <h1 class="four">Im gonna fade Out slow...</h1>
+    <h1 class="five">Im gonna fade Out fast...</h1>
+    <h1 class="six">Im gonna fade Out 1500...</h1>
+    <br>
+    <br>
+    <br>
+
+    <button class="btnThree">Fade Toggle</button>
+    <br>
+    <br>
+    <h1 class="seven">Im gonna fade Toggle slow...</h1>
+    <h1 class="eight">Im gonna fade Toggle fast...</h1>
+    <h1 class="nine">Im gonna fade Toggle 1500...</h1>
+    
+    <br>
+    <br>
+    <br>
+
+    <button class="btnFour">Fade To</button>
+    <br>
+    <br>
+    <h1 class="ten">Im gonna fade To slow...</h1>
+    <h1 class="eleven">Im gonna fade To fast...</h1>
+    <h1 class="twelve">Im gonna fade To 1500...</h1>
+    
+    
+</body>
+
+</html>

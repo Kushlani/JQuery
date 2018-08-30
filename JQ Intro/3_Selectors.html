@@ -1,0 +1,58 @@
+<!-- 
+jQuery selectors are one of the most important parts of the jQuery library.
+jQuery selectors allow you to select and manipulate HTML element(s).
+
+jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.
+All selectors in jQuery start with the dollar sign and parentheses: $().
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+	// The element Selector
+	//The jQuery element selector selects elements based on the element name.
+		$(document).ready(function () {
+			$(".one").click(function() {
+				$("p").hide();
+			});
+		});
+
+	//The id Selector
+	//The jQuery id selector selects elements based on the id name.
+		$(document).ready(function () {
+			$(".two").click(function() {
+				$("#test").hide();
+			});
+		});
+	//The Class Selector
+	//The jQuery class selector selects elements based on the class name.
+		$(document).ready(function () {
+					$(".three").click(function() {
+						$(".testone").hide();
+					});
+				});
+
+	</script>
+</head>
+<body>
+
+<p>Hello there...........</p>
+<p>I'm soo lonely..........</p>
+<p>It's time to go..........</p>
+
+<h3 id="test">I am going to die</h3>
+
+<h4 class="testone">Will you give me happiness</h4>
+<br>
+<br>
+<button class="one">Click Me</button>
+<button class="two">Click Me</button>
+<button class="three">Click Me</button>
+
+</body>
+</html>
+

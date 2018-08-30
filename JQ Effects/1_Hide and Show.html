@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+    //With jQuery, you can hide and show HTML elements with the hide() and show() methods:
+    $(document).ready(function() {
+    	$(".one").click(function() {
+    		$("h1").hide();
+    	});
+	$(".two").click(function() {
+	    	$("h1").show();
+	    });
+
+    });
+
+    //The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.
+    $(document).ready(function() {
+        $(".three").click(function() {
+            $("p").hide("slow");
+        });
+    $(".four").click(function() {
+            $("p").show("fast");
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+
+	<button class="one">Hide</button>
+	<button class="two">Show</button>
+	<br>
+	
+    <h1>Lets play hide and seek....</h1>
+    <br>
+
+    <button class="three">Hide</button>
+    <button class="four">Show</button>
+    <br>
+    <p>This is a hide and show element with speed parameter</p>
+</body>
+
+</html>
